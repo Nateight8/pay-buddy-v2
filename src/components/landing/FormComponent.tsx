@@ -84,11 +84,11 @@ function FormComponent() {
   ];
 
   return (
-    <div className="mt-10 mx-auto max-w-4xl">
+    <div className="mt-10 mx-auto max-w-4xl ">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="grid grid-cols-2 gap-7"
+          className="grid md:grid-cols-2 gap-7 px-4 md:px-0"
         >
           <div className="col-span-full">
             <FormField

@@ -4,11 +4,11 @@ import React from "react";
 function Brands() {
   return (
     <>
-      <div className="mb-8">
-        <h3 className=" text-3xl text-center mb-4">
+      <div className="mb-8 px-4">
+        <h3 className="text-base md:text-3xl text-center mb-2 md:mb-4">
           Used And Trusted By Both Small And Large Teams
         </h3>
-        <p className="text-lg text-center">
+        <p className="text-sm md:text-lg text-center">
           Join over 15,000+ companies enjoy industry-leading experience with
           <span className=" text-secondary font-semibold"> PayBuddy</span>.
         </p>

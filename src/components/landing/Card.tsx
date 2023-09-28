@@ -9,7 +9,7 @@ interface Props {
 function Card({ info, secondary }: Props) {
   return (
     <div
-      className={`w-full max-w-xs p-5  border-slate-100/20 rounded-xl relative ${
+      className={`w-full max-w-xs p-4 md:p-5  border-slate-100/20 rounded-xl relative ${
         secondary ? "bg-secondary" : "bg-card border"
       }`}
     >
