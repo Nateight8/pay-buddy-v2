@@ -21,7 +21,7 @@ function Features() {
               </p>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 h-[32rem] gap-4 md:gap-9">
+          <div className="grid md:grid-cols-2  gap-4 md:gap-9">
             <Card
               info="Bulk pay contractors and direct employees effortlessly "
               secondary

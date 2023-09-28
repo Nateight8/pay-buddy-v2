@@ -8,27 +8,29 @@ interface Props {
 
 function Card({ info, secondary }: Props) {
   return (
-    <div
-      className={`w-full max-w-xs p-4 md:p-5  border-slate-100/20 rounded-xl relative ${
-        secondary ? "bg-secondary" : "bg-card border"
-      }`}
-    >
-      <Image
-        className="mb-12"
-        src="/images/wallet-3.png"
-        height={60}
-        width={60}
-        alt=""
-      />
-      <p
-        className={`text-lg ${
-          secondary ? "text-secondary-foreground" : "text-white"
+    <div className="relative">
+      <div
+        className={`w-full max-w-xs p-4 md:p-5  border-slate-100/20 rounded-xl relative ${
+          secondary ? "bg-secondary" : "bg-card border"
         }`}
       >
-        {info}
-      </p>
+        <Image
+          className="mb-12"
+          src="/images/wallet-3.png"
+          height={60}
+          width={60}
+          alt=""
+        />
+        <p
+          className={`text-lg ${
+            secondary ? "text-secondary-foreground" : "text-white"
+          }`}
+        >
+          {info}
+        </p>
+      </div>
       {secondary && (
-        <div className="absolute border border-secondary rounded-xl  w-80 h-52 -bottom-4 border-dashed -right-4 -z-10" />
+        <div className=" inset-0 absolute border border-slate-100/40 border-dashed -z-10 rounded-xl -bottom-2 -right-1" />
       )}
     </div>
   );
