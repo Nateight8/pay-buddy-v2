@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "./Card";
+import { Global, Group, Wallet, YelloWallet } from "../svg";
 
 function Features() {
   return (
     <div className="px-4">
       <div
         style={{ boxShadow: "20px 50px 80px 10px hsla(0, 0%, 0%, 0.25)" }}
-        className="w-full md:mx-auto rounded-3xl border-slate-50/10 border max-w-7xl my-32 relative bg-muted overflow-hidden min-h-[72rem] md:h-[42rem]"
+        className="w-full md:mx-auto rounded-3xl border-slate-50/10 border max-w-7xl my-32 relative bg-muted overflow-hidden h-[72rem] md:h-[42rem] "
       >
         <div className="absolute bg-secondary h-72 w-72 rounded-full md:-top-24 -bottom-24 -right-24 z-10" />
         <div className="absolute items-center flex flex-col md:flex-row z-20  w-full px-5 md:px-9 py-14">
@@ -25,11 +26,21 @@ function Features() {
             <Card
               info="Bulk pay contractors and direct employees effortlessly "
               secondary
+              icon={<Wallet />}
             />
 
-            <Card info="Flexibility with over 20+ payment options" />
-            <Card info="We’re scalable, we offer services to both small  and large enterprises. " />
-            <Card info="We stay up-to-date with evolving tax laws, labor regulations, so you don’t have to" />
+            <Card
+              icon={<Global />}
+              info="Flexibility with over 20+ payment options"
+            />
+            <Card
+              icon={<Group />}
+              info="We’re scalable, we offer services to both small  and large enterprises. "
+            />
+            <Card
+              icon={<YelloWallet />}
+              info="We stay up-to-date with evolving tax laws, labor regulations, so you don’t have to"
+            />
           </div>
         </div>
       </div>

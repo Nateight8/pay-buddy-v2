@@ -5,7 +5,7 @@ import NavLink from "./NavLinks";
 
 function Header() {
   return (
-    <nav className=" p-4  w-full max-w-7xl mx-auto mt-9 ">
+    <nav className=" p-4  w-full max-w-7xl mx-auto mt-9 sticky top-9 z-50 bg-background ">
       <div className="flex p-4 lg:px-9 md:py-5 border rounded-xl border-border flex-row justify-between items-center">
         <h1 className="font-heading-font text-xl">PayBuddy</h1>
 

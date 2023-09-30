@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Airbnb, Google, Microsoft, Nike, Puma, Spotify } from "../svg";
 
 function Brands() {
   return (
@@ -13,49 +14,14 @@ function Brands() {
           <span className=" text-secondary font-semibold"> PayBuddy</span>.
         </p>
       </div>
-      <div className="flex items-center justify-center select-none w-full gap-20 my-8">
-        <Image
-          className="o object-contain"
-          src={"/images/airbnb svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
-        <Image
-          className="o object-contain"
-          src={"/images/google svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
-        <Image
-          className="o object-contain"
-          src={"/images/microsoft svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
-        <Image
-          className="o object-contain"
-          src={"/images/nike svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
-        <Image
-          className="o object-contain"
-          src={"/images/puma svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
-        <Image
-          className="o object-contain"
-          src={"/images/spotify svg.png"}
-          alt=""
-          height={56}
-          width={145}
-        />
+      <div className="flex items-baseline justify-center select-none w-full gap-20 my-8">
+        <Airbnb />
+        <Google />
+        <Microsoft />
+
+        <Puma />
+        <Spotify />
+        <Nike />
       </div>
     </>
   );

@@ -128,7 +128,13 @@ function FormComponent() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Company's name" {...field} />
+                  <Input
+                    style={{
+                      boxShadow: "4px 4px 15px 0px hsla(0, 0%, 0%, 0.25);",
+                    }}
+                    placeholder="Company's name"
+                    {...field}
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -139,7 +145,13 @@ function FormComponent() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Company's email" {...field} />
+                  <Input
+                    style={{
+                      boxShadow: "4px 4px 15px 0px hsla(0, 0%, 0%, 0.25);",
+                    }}
+                    placeholder="Company's email"
+                    {...field}
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -156,7 +168,11 @@ function FormComponent() {
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger>
+                      <SelectTrigger
+                        style={{
+                          boxShadow: "4px 4px 15px 0px hsla(0, 0%, 0%, 0.25);",
+                        }}
+                      >
                         <SelectValue placeholder="Location" />
                       </SelectTrigger>
                     </FormControl>

@@ -1,0 +1,10 @@
+export { default as Airbnb } from "../../public/svgs/Airbnb.svg";
+export { default as Google } from "../../public/svgs/Google.svg";
+export { default as Microsoft } from "../../public/svgs/Microsoft.svg";
+export { default as Spotify } from "../../public/svgs/Spotify.svg";
+export { default as Puma } from "../../public/svgs/PUMA.svg";
+export { default as Nike } from "../../public/svgs/Nike.svg";
+export { default as Group } from "../../public/svgs/group.svg";
+export { default as Wallet } from "../../public/svgs/wallet-3.svg";
+export { default as Global } from "../../public/svgs/global.svg";
+export { default as YelloWallet } from "../../public/svgs/wallet-2.svg";

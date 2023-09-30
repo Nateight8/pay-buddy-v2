@@ -41,20 +41,20 @@ function Faq() {
   ];
 
   return (
-    <div className="mx-auto px-4 md:px-0 flex flex-col md:flex-row  w-full max-w-7xl mb-32 items-center">
+    <div className="mx-auto px-4 md:px-0 flex  flex-col md:flex-row  w-full max-w-7xl mb-32 items-center">
       <div className=" max-w-lg mb-7 md:mb-0">
-        <h2 className="text-center text-2xl md:text-6xl font-heading-font mb-2 md:mb-4 ">
+        <h2 className="text-center md:text-left text-2xl md:text-6xl font-heading-font mb-2 md:mb-4 ">
           Frequently <br className="hidden md:block" /> Asked Questions
         </h2>
-        <p className="text-center text-lg text-muted-foreground">
+        <p className="text-center md:text-left text-lg text-muted-foreground">
           Have an unaswered question? Reach us at support@paybuddy.com
         </p>
       </div>
       <div
         style={{ boxShadow: "20px 50px 80px 10px hsla(0, 0%, 0%, 0.25)" }}
-        className="flex-1 bg-muted px-4 md:px-10 md:py-8 py-5 rounded-xl"
+        className="flex-1 bg-muted px-4 md:px-10 md:py-8 py-5 rounded-xl border-slate-50/10 border"
       >
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" className="w-full">
           {accordionData.map(({ id, ques, ans }) => (
             <AccordionItem value={id} key={id}>
               <AccordionTrigger>{ques}</AccordionTrigger>
